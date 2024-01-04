@@ -5,10 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DComms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
-    <Grid>
+        Title="DAICOMMS" 
+        Height="720" 
+        Width="1280" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Background="Transparent"
+        WindowStyle="None"
+        AllowsTransparency="True">
 
+    <Grid Background="Transparent">
+        <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
+
+        
+        <Grid Background="Transparent" Margin="0,0,1040,0">
+            <Border CornerRadius="25,0,0,25" BorderThickness="0" Background="#f1c89d"/>
+            
+        </Grid>
+
+        <Grid Background="#fcf2ea" Margin="240,0,700,0">
+
+        </Grid>
     </Grid>
-    
 </Window>
