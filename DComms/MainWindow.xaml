@@ -12,19 +12,36 @@
         ResizeMode="NoResize"
         Background="Transparent"
         WindowStyle="None"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        x:Name="mainWindow">
 
     <Grid Background="Transparent">
         <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
 
-        
         <Grid Background="Transparent" Margin="0,0,1040,0">
             <Border CornerRadius="25,0,0,25" BorderThickness="0" Background="#f1c89d"/>
-            
+                
         </Grid>
-
+        
         <Grid Background="#fcf2ea" Margin="240,0,700,0">
-
+            <Ellipse x:Name="levelCircle" Fill="#f1c89d" Width="268" Height="268" Margin="36,34,36,418">
+                
+            </Ellipse>
         </Grid>
+
+        <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="dragBar_MouseLeftButtonDown"/>
+
+        <Button x:Name="exitButton" Style="{StaticResource circularButton}" 
+               Template = "{StaticResource noHover}"  Margin="1228,10,10,665" Click="exitButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock Text="X" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="15" Foreground="#9d9188"/>
+        </Button>
+
     </Grid>
 </Window>
+    

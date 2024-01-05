@@ -4,6 +4,35 @@
              xmlns:local="clr-namespace:DComms"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="circularButton" TargetType="Button">
+            <Setter Property="Width" Value="42"/>
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="BorderBrush" Value = "Transparent"/>
+            <Setter Property="Background" Value ="#f1c89d"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Background" Value="#f1c89d"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#9d9188"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <ControlTemplate x:Key="noHover" TargetType="Button">
+            <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+            </Border>
+        </ControlTemplate>
+        
+        <Style x:Key="BoldFont">
+            <Setter Property="TextElement.FontFamily"
+                    Value="/Fonts/#Kollektif">
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
