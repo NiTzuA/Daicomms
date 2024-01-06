@@ -34,5 +34,31 @@ namespace DComms
                 DragMove();
             }
         }
+
+        private void shopButton_Click(object sender, RoutedEventArgs e)
+        {
+            userLevel.Text = "100";
+            usernameText.Text = "NiTzuA";
+            currentStreak.Text = 189.ToString() + " Days";
+            levelProgress.Text = 1119.ToString() + "/" + 1120.ToString() + " XP";
+            MessageBox.Show("You opened the shop!");
+        }
+
+        private void configButton_Click(object sender, RoutedEventArgs e)
+        {
+            userLevel.Text = "69";
+            usernameText.Text = "Apeir0n";
+            currentStreak.Text = 365.ToString() + " Days";
+            levelProgress.Text = 9999.ToString() + "/" + 10000.ToString() + " XP";
+            MessageBox.Show("You opened the configuration menu!");
+        }
+
+        /*private void testButton_Click(object sender, RoutedEventArgs e)
+        {
+            userLevel.Text = "100";
+            usernameText.Text = "NiTzuA";
+            currentStreak.Text = 189.ToString() + " Days"; 
+            levelProgress.Text = 1119.ToString() + "/" + 1120.ToString() + " XP";
+        }*/
     }
 }

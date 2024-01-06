@@ -14,19 +14,72 @@
         WindowStyle="None"
         AllowsTransparency="True"
         x:Name="mainWindow">
-
+    
     <Grid Background="Transparent">
         <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
 
         <Grid Background="Transparent" Margin="0,0,1040,0">
             <Border CornerRadius="25,0,0,25" BorderThickness="0" Background="#f1c89d"/>
-                
+
         </Grid>
-        
+
         <Grid Background="#fcf2ea" Margin="240,0,700,0">
-            <Ellipse x:Name="levelCircle" Fill="#f1c89d" Width="268" Height="268" Margin="36,34,36,418">
-                
-            </Ellipse>
+            <Canvas Width="268" Height="268" Margin="36,34,36,418">
+                <Grid>
+                    <Ellipse x:Name="levelCircle" Fill="#f1c89d" Width="268" Height="268"/>
+                    <TextBlock x:Name="userLevel" Text="12" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="100"  Foreground="#9d9188"
+                       TextAlignment="Center" FontWeight="Bold" Canvas.Left="88" Canvas.Top="84" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center">
+                    </TextBlock>
+                    <TextBlock Text="Level" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="20"  Foreground="#9d9188"
+                       TextAlignment="Center" FontWeight="Bold" Canvas.Left="88" Canvas.Top="84" 
+                           Margin="0,168,0,0">
+                    </TextBlock>
+                </Grid>
+            </Canvas>
+            
+            <TextBlock x:Name="usernameText" Text="Username" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="30"  Foreground="#9d9188"
+                       Margin="0,320,0,0" TextAlignment="Center" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock x:Name="levelProgress" Text="0/100 XP" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="20"  Foreground="#9d9188"
+                       Margin="0,350,0,0" TextAlignment="Center">
+            </TextBlock>
+            <TextBlock Text="Current Streak" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="20"  Foreground="#9d9188"
+                       Margin="0,390,0,0" TextAlignment="Center" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock x:Name="currentStreak" Text="0 Days" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="18"  Foreground="#9d9188"
+                       Margin="0,410,0,0" TextAlignment="Center">
+            </TextBlock>
+
+            <Button x:Name="configButton" Style="{StaticResource buttonTypeOne}"
+                    Template="{StaticResource noHover}" Margin="75,480,75,170" Click="configButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="35"/>
+                    </Style>
+                </Button.Resources>
+                <TextBlock Text="Configuration" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+            </Button>
+
+            <Button x:Name="shopButton" Style="{StaticResource buttonTypeOne}"
+                    Template="{StaticResource noHover}" Margin="75,565,75,85" Click="shopButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="35"/>
+                    </Style>
+                </Button.Resources>
+                <TextBlock Text="Shop" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+            </Button>
+
+            <!--<Button Margin="0,555,0,0" x:Name="testButton" Click="testButton_Click"></Button>-->
         </Grid>
 
         <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="dragBar_MouseLeftButtonDown"/>
@@ -38,8 +91,8 @@
                     <Setter Property="CornerRadius" Value="25"/>
                 </Style>
             </Button.Resources>
-            <TextBlock Text="X" Style="{StaticResource BoldFont}"
-                Background="Transparent" FontSize="15" Foreground="#9d9188"/>
+            <TextBlock Text="x" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="16" Foreground="#9d9188" FontWeight="Bold"/>
         </Button>
 
     </Grid>
