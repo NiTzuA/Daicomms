@@ -10,9 +10,9 @@
         Width="1280" 
         WindowStartupLocation="CenterScreen" 
         ResizeMode="NoResize"
-        Background="Transparent"
         WindowStyle="None"
         AllowsTransparency="True"
+        Background="Transparent"
         x:Name="mainWindow">
     
     <Grid Background="Transparent">
@@ -35,7 +35,7 @@
             <Grid Width="190" Height="390" Background="Transparent" Margin="25,200,25,130">
                 <!--In the future, replace this with a Grid so that there can be
                 more than just 5 commission lists-->
-                <Button x:Name="commsListOne" Style="{StaticResource commsListButton}" Margin="2,10,2,315">
+                <Button x:Name="commsListOne" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,10,2,315" Click="CommsListOne_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="25"/>
@@ -45,7 +45,7 @@
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
                 </Button>
                 <!--Button Two-->
-                <Button x:Name="commsListTwo" Style="{StaticResource commsListButton}" Margin="2,90,2,235">
+                <Button x:Name="commsListTwo" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,90,2,235" Click="CommsListTwo_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="25"/>
@@ -55,7 +55,7 @@
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
                 </Button>
                 <!--Button Three-->
-                <Button x:Name="commsListThree" Style="{StaticResource commsListButton}" Margin="2,170,2,155">
+                <Button x:Name="commsListThree" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,170,2,155" Click="CommsListThree_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="25"/>
@@ -65,7 +65,7 @@
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
                 </Button>
                 <!--Button Four-->
-                <Button x:Name="commsListFour" Style="{StaticResource commsListButton}" Margin="2,250,2,75">
+                <Button x:Name="commsListFour" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,250,2,75" Click="CommsListFour_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="25"/>
@@ -75,7 +75,7 @@
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
                 </Button>
                 <!--Button Five-->
-                <Button x:Name="commsListFive" Style="{StaticResource commsListButton}" Margin="2,330,2,-5">
+                <Button x:Name="commsListFive" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,330,2,-5" Click="CommsListFive_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="25"/>
@@ -123,7 +123,7 @@
             </TextBlock>
 
             <Button x:Name="configButton" Style="{StaticResource buttonTypeOne}"
-                    Template="{StaticResource noHover}" Margin="75,480,75,170" Click="configButton_Click">
+                    Template="{StaticResource noHover}" Margin="75,480,75,170" Click="ConfigButton_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="35"/>
@@ -134,7 +134,7 @@
             </Button>
 
             <Button x:Name="shopButton" Style="{StaticResource buttonTypeOne}"
-                    Template="{StaticResource noHover}" Margin="75,565,75,85" Click="shopButton_Click">
+                    Template="{StaticResource noHover}" Margin="75,565,75,85" Click="ShopButton_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="35"/>
@@ -147,10 +147,10 @@
             <!--<Button Margin="0,555,0,0" x:Name="testButton" Click="testButton_Click"></Button>-->
         </Grid>
 
-        <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="dragBar_MouseLeftButtonDown"/>
+        <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="DragBar_MouseLeftButtonDown"/>
 
         <Button x:Name="exitButton" Style="{StaticResource circularButton}" 
-               Template = "{StaticResource noHover}"  Margin="1228,10,10,665" Click="exitButton_Click">
+               Template = "{StaticResource noHover}"  Margin="1228,10,10,665" Click="ExitButton_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="25"/>

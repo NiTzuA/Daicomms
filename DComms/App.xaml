@@ -47,7 +47,7 @@
                     <Setter Property="Background" Value="#f8e3ce"/>
                 </Trigger>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#f1c89d"/>
+                    <Setter Property="Background" Value="#fcf2ea"/>
                 </Trigger>
                 <Trigger Property="IsEnabled" Value="False">
                     <Setter Property="Background" Value="#e1ae86"/>
