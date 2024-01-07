@@ -15,151 +15,156 @@
         Background="Transparent"
         x:Name="mainWindow">
     
-    <Grid Background="Transparent">
-        <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
+    
+    <Viewbox>
+        <Grid Background="Transparent">
+            <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
 
-        <Grid Background="Transparent" Margin="0,0,1040,0">
-            <Border CornerRadius="25,0,0,25" BorderThickness="0" Background="#f1c89d"/>
-            <Canvas Width="210" Height="100" Margin="15,50,15,570">
-                <Grid>
-                    <Rectangle Width="210" Height="100" Fill="#f8e3ce"
+            <Grid Background="Transparent" Margin="0,0,1040,0">
+                <Border CornerRadius="25,0,0,25" BorderThickness="0" Background="#f1c89d"/>
+                <Canvas Width="210" Height="100" Margin="15,50,15,570">
+                    <Grid>
+                        <Rectangle Width="210" Height="100" Fill="#f8e3ce"
                        RadiusX="30" RadiusY="30"/>
-                    <TextBlock Text="List of Commissions" Style="{StaticResource BoldFont}"
+                        <TextBlock Text="List of Commissions" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="25"  Foreground="#9d9188"
                        TextAlignment="Center" FontWeight="Bold" Canvas.Left="80" Canvas.Top="40"
                                HorizontalAlignment="Center" VerticalAlignment="Center" 
                                TextWrapping="Wrap" Width="203">
-                    </TextBlock>
-                </Grid>
-            </Canvas>
-            <Grid Width="190" Height="390" Background="Transparent" Margin="25,200,25,130">
-                <!--In the future, replace this with a Grid so that there can be
+                        </TextBlock>
+                    </Grid>
+                </Canvas>
+                <Grid Width="190" Height="390" Background="Transparent" Margin="25,200,25,130">
+                    <!--In the future, replace this with a Grid so that there can be
                 more than just 5 commission lists-->
-                <Button x:Name="commsListOne" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,10,2,315" Click="CommsListOne_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="25"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock Text="Work" Style="{StaticResource BoldFont}"
+                    <Button x:Name="commsListOne" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,10,2,315" Click="CommsListOne_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                        <TextBlock Text="Work" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-                </Button>
-                <!--Button Two-->
-                <Button x:Name="commsListTwo" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,90,2,235" Click="CommsListTwo_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="25"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock Text="School" Style="{StaticResource BoldFont}"
+                    </Button>
+                    <!--Button Two-->
+                    <Button x:Name="commsListTwo" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,90,2,235" Click="CommsListTwo_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                        <TextBlock Text="School" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-                </Button>
-                <!--Button Three-->
-                <Button x:Name="commsListThree" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,170,2,155" Click="CommsListThree_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="25"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock Text="Programming" Style="{StaticResource BoldFont}"
+                    </Button>
+                    <!--Button Three-->
+                    <Button x:Name="commsListThree" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,170,2,155" Click="CommsListThree_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                        <TextBlock Text="Programming" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-                </Button>
-                <!--Button Four-->
-                <Button x:Name="commsListFour" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,250,2,75" Click="CommsListFour_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="25"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock Text="Life" Style="{StaticResource BoldFont}"
+                    </Button>
+                    <!--Button Four-->
+                    <Button x:Name="commsListFour" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,250,2,75" Click="CommsListFour_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                        <TextBlock Text="Life" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-                </Button>
-                <!--Button Five-->
-                <Button x:Name="commsListFive" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,330,2,-5" Click="CommsListFive_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="25"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock Text="Exercise" Style="{StaticResource BoldFont}"
+                    </Button>
+                    <!--Button Five-->
+                    <Button x:Name="commsListFive" Style="{StaticResource commsListButton}" Template = "{StaticResource noHover}" Margin="2,330,2,-5" Click="CommsListFive_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="25"/>
+                            </Style>
+                        </Button.Resources>
+                        <TextBlock Text="Exercise" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-                </Button>
-            </Grid>
-            
-        </Grid>
+                    </Button>
+                </Grid>
 
-        <Grid Background="#fcf2ea" Margin="240,0,700,0">
-            <Canvas Width="268" Height="268" Margin="36,34,36,418">
-                <Grid>
-                    <Ellipse x:Name="levelCircle" Fill="#f1c89d" Width="268" Height="268"/>
-                    <TextBlock x:Name="userLevel" Text="12" Style="{StaticResource BoldFont}"
+            </Grid>
+
+            <Grid Background="#fcf2ea" Margin="240,0,700,0">
+                <Canvas Width="268" Height="268" Margin="36,34,36,418">
+                    <Grid>
+                        <Ellipse x:Name="levelCircle" Fill="#f1c89d" Width="268" Height="268"/>
+                        <TextBlock x:Name="userLevel" Text="12" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="100"  Foreground="#9d9188"
                        TextAlignment="Center" FontWeight="Bold" Canvas.Left="88" Canvas.Top="84" 
                            HorizontalAlignment="Center" VerticalAlignment="Center">
-                    </TextBlock>
-                    <TextBlock Text="Level" Style="{StaticResource BoldFont}"
+                        </TextBlock>
+                        <TextBlock Text="Level" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="20"  Foreground="#9d9188"
                        TextAlignment="Center" FontWeight="Bold" Canvas.Left="88" Canvas.Top="84" 
                            Margin="0,168,0,0">
-                    </TextBlock>
-                </Grid>
-            </Canvas>
-            
-            <TextBlock x:Name="usernameText" Text="Username" Style="{StaticResource BoldFont}"
+                        </TextBlock>
+                    </Grid>
+                </Canvas>
+
+                <TextBlock x:Name="usernameText" Text="Username" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="30"  Foreground="#9d9188"
                        Margin="0,320,0,0" TextAlignment="Center" FontWeight="Bold">
-            </TextBlock>
-            <TextBlock x:Name="levelProgress" Text="0/100 XP" Style="{StaticResource BoldFont}"
+                </TextBlock>
+                <TextBlock x:Name="levelProgress" Text="0/100 XP" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="20"  Foreground="#9d9188"
                        Margin="0,350,0,0" TextAlignment="Center">
-            </TextBlock>
-            <TextBlock Text="Current Streak" Style="{StaticResource BoldFont}"
+                </TextBlock>
+                <TextBlock Text="Current Streak" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="20"  Foreground="#9d9188"
                        Margin="0,390,0,0" TextAlignment="Center" FontWeight="Bold">
-            </TextBlock>
-            <TextBlock x:Name="currentStreak" Text="0 Days" Style="{StaticResource BoldFont}"
+                </TextBlock>
+                <TextBlock x:Name="currentStreak" Text="0 Days" Style="{StaticResource BoldFont}"
                        Background="Transparent" FontSize="18"  Foreground="#9d9188"
                        Margin="0,410,0,0" TextAlignment="Center">
-            </TextBlock>
+                </TextBlock>
 
-            <Button x:Name="configButton" Style="{StaticResource buttonTypeOne}"
+                <Button x:Name="configButton" Style="{StaticResource buttonTypeOne}"
                     Template="{StaticResource noHover}" Margin="75,480,75,170" Click="ConfigButton_Click">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="35"/>
-                    </Style>
-                </Button.Resources>
-                <TextBlock Text="Configuration" Style="{StaticResource BoldFont}"
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="35"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Configuration" Style="{StaticResource BoldFont}"
                 Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
-            </Button>
+                </Button>
 
-            <Button x:Name="shopButton" Style="{StaticResource buttonTypeOne}"
+                <Button x:Name="shopButton" Style="{StaticResource buttonTypeOne}"
                     Template="{StaticResource noHover}" Margin="75,565,75,85" Click="ShopButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="35"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Shop" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+
+                <!--<Button Margin="0,555,0,0" x:Name="testButton" Click="testButton_Click"></Button>-->
+            </Grid>
+
+            <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="DragBar_MouseLeftButtonDown"/>
+
+            <Button x:Name="exitButton" Style="{StaticResource circularButton}" 
+               Template = "{StaticResource noHover}"  Margin="1228,10,10,665" Click="ExitButton_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="35"/>
+                        <Setter Property="CornerRadius" Value="25"/>
                     </Style>
                 </Button.Resources>
-                <TextBlock Text="Shop" Style="{StaticResource BoldFont}"
-                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                <TextBlock Text="x" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="16" Foreground="#9d9188" FontWeight="Bold"/>
             </Button>
 
-            <!--<Button Margin="0,555,0,0" x:Name="testButton" Click="testButton_Click"></Button>-->
         </Grid>
-
-        <Grid x:Name="dragBar" Background="Transparent" Margin="0,0,0,666" MouseLeftButtonDown="DragBar_MouseLeftButtonDown"/>
-
-        <Button x:Name="exitButton" Style="{StaticResource circularButton}" 
-               Template = "{StaticResource noHover}"  Margin="1228,10,10,665" Click="ExitButton_Click">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="25"/>
-                </Style>
-            </Button.Resources>
-            <TextBlock Text="x" Style="{StaticResource BoldFont}"
-                Background="Transparent" FontSize="16" Foreground="#9d9188" FontWeight="Bold"/>
-        </Button>
-
-    </Grid>
+    </Viewbox>
+    
+    
 </Window>
     

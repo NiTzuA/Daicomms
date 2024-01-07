@@ -81,7 +81,7 @@ namespace DComms
         private void CommsListThree_Click(object sender, RoutedEventArgs e)
         {
             EnableButtons();
-            commsListThree.IsEnabled = false;
+            commsListThree.IsEnabled = false;;
         }
 
         private void CommsListFour_Click(object sender, RoutedEventArgs e)
