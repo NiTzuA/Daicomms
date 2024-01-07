@@ -32,6 +32,59 @@
                     </TextBlock>
                 </Grid>
             </Canvas>
+            <Grid Width="190" Height="390" Background="Transparent" Margin="25,200,25,130">
+                <!--In the future, replace this with a Grid so that there can be
+                more than just 5 commission lists-->
+                <Button x:Name="commsListOne" Style="{StaticResource commsListButton}" Margin="2,10,2,315">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Work" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+                <!--Button Two-->
+                <Button x:Name="commsListTwo" Style="{StaticResource commsListButton}" Margin="2,90,2,235">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="School" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+                <!--Button Three-->
+                <Button x:Name="commsListThree" Style="{StaticResource commsListButton}" Margin="2,170,2,155">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Programming" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+                <!--Button Four-->
+                <Button x:Name="commsListFour" Style="{StaticResource commsListButton}" Margin="2,250,2,75">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Life" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+                <!--Button Five-->
+                <Button x:Name="commsListFive" Style="{StaticResource commsListButton}" Margin="2,330,2,-5">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="Exercise" Style="{StaticResource BoldFont}"
+                Background="Transparent" FontSize="20" Foreground="#9d9188" FontWeight="Bold"/>
+                </Button>
+            </Grid>
             
         </Grid>
 

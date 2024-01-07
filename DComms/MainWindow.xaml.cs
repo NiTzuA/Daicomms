@@ -53,12 +53,6 @@ namespace DComms
             MessageBox.Show("You opened the configuration menu!");
         }
 
-        /*private void testButton_Click(object sender, RoutedEventArgs e)
-        {
-            userLevel.Text = "100";
-            usernameText.Text = "NiTzuA";
-            currentStreak.Text = 189.ToString() + " Days"; 
-            levelProgress.Text = 1119.ToString() + "/" + 1120.ToString() + " XP";
-        }*/
+        /*Make a function that checks if a button is disabled, if disabled, enable. Then make the function disable the receibed button*/
     }
 }
