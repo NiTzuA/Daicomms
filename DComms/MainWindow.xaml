@@ -14,8 +14,8 @@
         AllowsTransparency="True"
         Background="Transparent"
         x:Name="mainWindow">
-    
-    
+
+
     <Viewbox>
         <Grid Background="Transparent">
             <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
@@ -162,9 +162,19 @@
                 Background="Transparent" FontSize="16" Foreground="#9d9188" FontWeight="Bold"/>
             </Button>
 
+            <Canvas>
+                <TextBlock Text="Perform the following tasks to finish your daily
+commissions" Style="{StaticResource BoldFont}"
+                       Background="Transparent" FontSize="27"  Foreground="#9d9188"
+                       TextAlignment="Left" FontWeight="Bold"
+                       TextWrapping="Wrap" Canvas.Left="620" Canvas.Top="40" Width="585" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </Canvas>
+
+
+
         </Grid>
     </Viewbox>
-    
-    
+
+
 </Window>
     
