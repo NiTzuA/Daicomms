@@ -18,6 +18,8 @@
 
     <Viewbox>
         <Grid Background="Transparent">
+            
+            
             <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
 
             <Grid Background="Transparent" Margin="0,0,1040,0">
@@ -172,6 +174,31 @@ commissions" Style="{StaticResource BoldFont}"
 
 
 
+            <Grid Background="Transparent" Width="610" Height="380" Margin="620,110,50,230">
+                <Canvas Width="610" Margin="0,0,0,300">
+                    <Grid>
+                        <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                    </Grid>
+                </Canvas>
+
+                <Canvas Width="610" Margin="0,95,0,205">
+                    <Grid>
+                        <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                    </Grid>
+                </Canvas>
+
+                <Canvas Width="610" Margin="0,190,0,110">
+                    <Grid>
+                        <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                    </Grid>
+                </Canvas>
+
+                <Canvas Width="610" Margin="0,285,0,15">
+                    <Grid>
+                        <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                    </Grid>
+                </Canvas>
+            </Grid>
         </Grid>
     </Viewbox>
 
