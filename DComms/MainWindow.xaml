@@ -18,8 +18,8 @@
 
     <Viewbox>
         <Grid Background="Transparent">
-            
-            
+
+
             <Border CornerRadius="25" BorderThickness="0" Background="#f8e3ce"/>
 
             <Grid Background="Transparent" Margin="0,0,1040,0">
@@ -176,26 +176,58 @@ commissions" Style="{StaticResource BoldFont}"
 
             <Grid Background="Transparent" Width="610" Height="380" Margin="620,110,50,230">
                 <Canvas Width="610" Margin="0,0,0,300">
-                    <Grid>
+                    <Grid Width="610" Height="80">
                         <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                        <TextBlock x:Name="taskTitleOne" Text="Commission Number 1" FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}" FontWeight="Bold" 
+                                   Margin="13,13,197,37"/>
+                        <TextBlock x:Name="taskDescOne" Text="Lorem ipsum dolor sit amet, consectetur adip." FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}"
+                                   Margin="13,34,197,16"/>
                     </Grid>
                 </Canvas>
 
                 <Canvas Width="610" Margin="0,95,0,205">
-                    <Grid>
+                    <Grid Width="610" Height="80">
                         <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                        <TextBlock x:Name="taskTitleTwo" Text="Commission Number 2" FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}" FontWeight="Bold" 
+                                   Margin="13,13,197,37"/>
+                        <TextBlock x:Name="taskDescTwo" Text="Lorem ipsum dolor sit amet, consectetur adip." FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}"
+                                   Margin="13,34,197,16"/>
                     </Grid>
                 </Canvas>
 
                 <Canvas Width="610" Margin="0,190,0,110">
-                    <Grid>
+                    <Grid Width="610" Height="80">
                         <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                        <TextBlock x:Name="taskTitleThree" Text="Commission Number 3" FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}" FontWeight="Bold" 
+                                   Margin="13,13,197,37"/>
+                        <TextBlock x:Name="taskDescThree" Text="Lorem ipsum dolor sit amet, consectetur adip." FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}"
+                                   Margin="13,34,197,16"/>
                     </Grid>
                 </Canvas>
 
                 <Canvas Width="610" Margin="0,285,0,15">
-                    <Grid>
+                    <Grid Width="610" Height="80">
                         <Rectangle Fill="#fcf2ea" Width="610" Height="80"/>
+                        <TextBlock x:Name="taskTitleFour" Text="Commission Number 4" FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}" FontWeight="Bold" 
+                                   Margin="13,13,197,37"/>
+                        <TextBlock x:Name="taskDescFour" Text="Lorem ipsum dolor sit amet, consectetur adip." FontSize="20"
+                                   Background="Transparent" Foreground="#9d9188"
+                                   Style="{StaticResource BoldFont}"
+                                   Margin="13,34,197,16"/>
                     </Grid>
                 </Canvas>
             </Grid>
